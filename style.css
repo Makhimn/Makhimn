@@ -1,0 +1,118 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #ff1c8c, #fce21c, #00ba94);
+    display: flex;
+    font-family: 'Dosis', san-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.base{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #de6102;
+    border: solid 1px black; 
+    border-radius: 16px;
+    box-shadow: 0 0 30px black;
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkir-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px black;
+    color: black;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+}
+
+.calculatorButtonRow{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calculatorButton{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #ffe100;
+    border: 1px solid #ffe100;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffe100;
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 30px;
+    height: 65px;
+}
+
+.delete, .enter, .calculatorButton:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #0076fc;
+    border: 1px solid #0076fc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0076fc;
+    color: white;
+}
+
+.delete{
+    flex-basis: 47%;
+}
+
+.zero{
+    flex-basis: 73%;
+}
+
+.calculatorButton:hover{
+    border: 2px solid black;
+    box-shadow: 0 0 30px black;
+}
+
+.delete:hover, .enter:hover, .calculatorButton:last-child:hover{
+    border: 2px solid red;
+    box-shadow: 0 0 30px red;
+}
+
+.calculatorButton:active{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: black;
+    border: 3px solid black;
+    box-shadow: 0 0 30px black;
+    color: white;
+}
+
+.delete:active, .enter:active, .calculatorButton:last-child:active{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: red;
+    border: 3px solid red;
+    box-shadow: 0 0 30px red;
+    color: white;
+}
+
